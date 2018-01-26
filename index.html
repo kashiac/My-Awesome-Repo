@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+    <link href="css/style-2.css" rel="stylesheet">
 
     <title>Puppies for Days!!!</title>
 
@@ -58,8 +59,54 @@
           <h1 class="jumbotron-heading" style="font-size: 100px; text-shadow: 15px 15px 15px #666">Puppies for Days!</h1>
           <p class="lead text-muted" style="font-size: 35px">Because everyone needs to look at pictures of puppies</p>
           <p>
-            <a href="https://www.petfinder.com/search/dogs-for-adoption/" target=_blank" class="btn btn-primary my-2">Puppies for adoption</a>
+            <a href="https://www.petfinder.com/search/dogs-for-adoption/" target="_blank" class="btn btn-primary my-2">Puppies for adoption</a>
             <a href="https://hellogiggles.com/fashion/what-to-expect-when-youre-expecting-a-new-puppy/" target=_blank class="btn btn-secondary my-2">What to expect when you're expecting a pup</a>
+        <div class="dropdown">
+  <button class="btn btn-primary my-2" style="background-color:purple" style="width: 20px">Types of Pups</button>
+  <script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>
+  <div class="dropdown-content">
+    <button class="accordion">First Row</button>
+<div class="panel">
+  <p>Alaskan Malamutes, Bulldogs, Labs</p>
+</div>
+
+<button class="accordion">Second Row</button>
+<div class="panel">
+  <p>Pitbulls, Beagles, Sheepadoodles</p>
+</div>
+
+<button class="accordion">Third Row</button>
+<div class="panel">
+  <p>Cattledogs, Dachshunds, German Shepherds</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+    <div class="popup" onclick="myFunction()">Surprise!
+  <span class="popuptext" id="myPopup">Woof woof!</span>
+</div>
+  </div>
+</div>
+  </div>
           </p>
         </div>
       </section>
